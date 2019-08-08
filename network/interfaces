@@ -1,0 +1,27 @@
+# interfaces(5) file used by ifup(8) and ifdown(8)
+auto lo
+iface lo inet loopback
+
+auto ens4f0
+iface ens4f0 inet static
+        address 192.168.168.240
+        netmask 255.255.255.0
+        network 192.168.168.0
+        broadcast 192.168.168.255
+
+auto ens4f1
+iface ens4f1 inet static
+        address 192.168.1.240
+        netmask 255.255.255.0
+        network 192.168.1.0
+        broadcast 192.168.1.255
+
+auto enp0s25
+iface enp0s25 inet static
+        address 10.21.53.201
+        netmask 255.255.255.0
+        network 10.21.53.0
+        broadcast 10.21.53.255
+        gateway 10.21.53.1
+        dns-nameservers 10.50.129.148 10.50.129.149
+        dns-search bsp.eng.sonicwall.com eng.sonicwall.com sv.us.sonicwall.com
