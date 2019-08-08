@@ -1,0 +1,57 @@
+127.0.0.1	localhost
+127.0.1.1	stelvio
+
+# The following lines are desirable for IPv6 capable hosts
+::1     ip6-localhost ip6-loopback
+fe00::0 ip6-localnet
+ff00::0 ip6-mcastprefix
+ff02::1 ip6-allnodes
+ff02::2 ip6-allrouters
+
+============================================================
+added for easy reference
+============================================================
+10.0.19.73      adsl
+10.0.203.140    kchen-fc13
+#10.0.98.9      chuck   wood
+10.204.212.202  chuck   wood
+10.0.204.110    europa
+#10.0.54.158    gibson
+10.204.212.200  gibson
+10.204.210.201  hw-heat-pc1 # hw lab pc by new heat chamber
+10.21.53.202  	matsu
+#10.202.2.77    merlot
+#10.202.2.79    chablis
+#10.202.2.82    bordeaux
+#10.202.2.84    cabernet
+10.204.3.250    sm-25
+10.204.212.253  rackterm  termrack # starting at port number 2000
+# barolo
+# syrah
+# meritage
+#76.21.76.122   netgear-r6300v2 gunter-router
+67.164.41.86    netgear-r6300v2 gunter-router
+10.204.212.202  bspjtag1  # bsp lab jtag debug station
+10.204.213.202  bspjtag2  # bsp lab jtag debug station
+10.204.210.215  opengear
+
+10.204.210.250  kingman
+10.204.213.1    tftpgateway  # for mgmt connected to 192.168.168.x, use ipaddr such as 10.204.213.14
+10.180.201.30   ftp-ismo  ismo-ftp # for FTP to ISMO FTP SERVER
+10.204.210.250  hwlab-kingman   kingman
+#10.21.53.203   hwlab-kingman   hwlab1
+10.204.210.4    thermo  hwlab
+
+10.198.42.3     outlets-rack3
+10.198.42.4     outlets-rack4
+#10.204.156.217 fender
+10.204.212.199  fender
+10.204.212.198  ibanez
+#10.204.156.215 kchen-win10     MININT-IIB6QOQ
+10.21.53.201    kchen-win10     MININT-IIB6QOQ
+
+24.130.158.123  kchen-home      pfsense
+10.103.49.239   glp2    # shanghai git server
+
+10.21.53.201    stelvio
+10.204.210.250	tianmen
