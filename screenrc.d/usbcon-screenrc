@@ -18,9 +18,9 @@ logfile flush 1
 # hardstatus alwayslastline "%H: dcons
 
 # Start up windows for each serial port we want to monitor.  There's no way to specify multiple on the command line
-screen -t W_9
+screen -t W_0
 number 0
-logfile /home/kchen/uc-log/scr0/scr0.log
+logfile /home/kchen/uc-log/uc0/w0.log
 logfile flush 1
 log on
 
