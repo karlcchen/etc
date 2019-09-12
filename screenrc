@@ -19,6 +19,8 @@
 # ------------------------------------------------------------------------------
 # SCREEN SETTINGS
 # ------------------------------------------------------------------------------
+# Use bash
+shell /bin/bash
 
 #startup_message off
 #nethack on
@@ -26,6 +28,7 @@
 #defflow on # will force screen to process ^S/^Q
 deflogin on
 #autodetach off
+autodetach on
 
 # turn visual bell on
 vbell on
@@ -66,7 +69,12 @@ hardstatus off
 # Set the hardstatus prop on gui terms to set the titlebar/icon title
 termcapinfo xterm*|rxvt*|kterm*|Eterm* hs:ts=\E]0;:fs=\007:ds=\E]0;\007
 # use this for the hard status string
-hardstatus string "%h%? users: %u%?"
+hardstatus on
+hardstatus alwayslastline
+# hardstatus string "%h%? users: %u%?"
+# hardstatus string "%{.kW}%-w%{.bW}%t [%n]%{-}%+w %=%{..G} %H %{..Y} %Y/%m/%d %c"
+hardstatus string '%{= kG}[%{G}%H%? %1`%?%{g}][%= %{= kw}%-w%{+b yk} %n*%t%?(%u)%? %{-}%+w %=%{g}][%{B}%m/%d %{W}%C%A%{g}]'
+
 
 # An alternative hardstatus to display a bar at the bottom listing the
 # windownames and highlighting the current windowname in blue. (This is only
