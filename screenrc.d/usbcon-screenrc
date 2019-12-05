@@ -16,9 +16,6 @@ escape ^Jj
 sessionname usb-console
 # caption always "%{= kw}%-w%{= BW}%n %t%{-}%+w %-= @%H users: %u"
 
-source /etc/screenrc.d/multiuser-plus
-logfile flush 1
-
 # Start up windows for each serial port we want to monitor.  There's no way to specify multiple on the command line
 chdir /home/kchen
 
@@ -27,6 +24,10 @@ screen -t main 0 login kchen
 logfile /home/kchen/uc-log/uc0/w0.log
 logfile flush 1
 log on
+
+hardstatus alwayslastline
+hardstatus string "%{= KW} %H [%`] %{= Kw}|%{-} %-Lw%{= bW}%n%f %t%{-}%+Lw %=%C%a %Y-%M-%d"
+#hardstatus alwayslastline "%H %-Lw%{= BW}%50>%n%f* %t%{-}%+Lw%<"
 
 #screen -t W_9
 #number 9
