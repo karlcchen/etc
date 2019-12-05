@@ -1,0 +1,44 @@
+# Some nice defaults
+defscrollback 100000
+defutf8 on
+startup_message off
+vbell off
+defflow off
+escape ^Hh
+#defescape ^Aa
+
+# Serial port session specifics
+sessionname serialports
+caption always "%{= kw}%-w%{= BW}%n %t%{-}%+w %-= @%H users: %u"
+
+source /etc/screenrc.d/multiuser
+
+#hardstatus alwayslastline "%{+r} %-w%{+bu I}%n-%t%{-}%+w %= %{+ b}%11` %{-}%D %d %LM %{+b I}%c "
+
+hardstatus alwayslastline "%H:dcons2"
+
+# Start up windows for each serial port we want to monitor.  There's no way to specify multiple on the command line.
+screen -t X /dev/ttyUSB8 115200
+number 9
+title 9
+screen -t X /dev/ttyUSB9 115200
+number 10
+title A
+screen -t X /dev/ttyUSB10 115200
+number 11
+title B
+screen -t X /dev/ttyUSB11 115200
+number 12
+title C
+screen -t X /dev/ttyUSB12 115200
+number 13
+title D
+screen -t x /dev/ttyUSB13 115200
+number 14
+title E
+screen -t x /dev/ttyUSB14 115200
+number 15
+title F
+screen -t x /dev/ttyUSB15 115200
+number 16
+title G
