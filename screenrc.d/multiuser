@@ -1,0 +1,3 @@
+# Enable multiuser but only allow relatively safe commands.  Disallow destroying windows - only detaching.
+multiuser on
+aclchg pmak,kchen,nacrapo,iharutyunov,omatthey,dkattungal,crussell,ychang,anchang,qguan,developer,kwang,mzou +rwx "bufferfile,stuff,colon,info,vbell,fit,clear,break,focus,windowlist,logfile,log,escape,meta,monitor,next,prev,other,number,redisplay,wrap,split,time,detach,copy,paste,xon,xoff,windows,silence,silencewait,resize,readbuf,readreg,activity,bind,displays,history,idle,lastmsg,lockscreen,wall,logtstamp,help,select,remove,title,reset,exec"
