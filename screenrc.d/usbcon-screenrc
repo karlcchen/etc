@@ -19,12 +19,6 @@ sessionname usb-console
 # Start up windows for each serial port we want to monitor.  There's no way to specify multiple on the command line
 chdir /home/kchen
 
-screen -t main 0 login kchen
-# number 0 
-logfile /home/kchen/uc-log/uc0/w0.log
-logfile flush 1
-log on
-
 hardstatus alwayslastline
 hardstatus string "%{= KW} %H [%`] %{= Kw}|%{-} %-Lw%{= bW}%n%f %t%{-}%+Lw %=%C%a %Y-%M-%d"
 #hardstatus alwayslastline "%H %-Lw%{= BW}%50>%n%f* %t%{-}%+Lw%<"
@@ -83,4 +77,9 @@ logfile flush 1
 number 1
 log on
 #
-select 1
+screen -t main 0 login kchen
+number 0 
+logfile /home/kchen/uc-log/uc0/w0.log
+logfile flush 1
+log on
+select 0
