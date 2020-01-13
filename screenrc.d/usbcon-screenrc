@@ -23,37 +23,31 @@ hardstatus alwayslastline
 hardstatus string "%{= KW} %H [%`] %{= Kw}|%{-} %-Lw%{= bW}%n%f %t%{-}%+Lw %=%C%a %Y-%M-%d"
 #hardstatus alwayslastline "%H %-Lw%{= BW}%50>%n%f* %t%{-}%+Lw%<"
 
-#screen -t W_9
-#number 9
-#logfile /home/kchen/uc-log/uc9/w9.log
-#logfile flush 1
-#log on
+screen -t S_0 /dev/ttyS0 115200
+number 8
+logfile /home/kchen/uc-log/uc8/uc8.log
+logfile flush 1
+log on
 #
-#screen -t W_8
-#number 8
-#logfile /home/kchen/uc-log/uc8/w8.log
-#logfile flush 1
-#log on
-#
-screen -t UC_3 /dev/ttyUSB6 115200
+screen -t UC_7 /dev/ttyUSB6 115200
 number 7
 logfile /home/kchen/uc-log/uc7/uc7.log
 logfile flush 1
 log on
 #
-screen -t UC_3 /dev/ttyUSB5 115200
+screen -t UC_6 /dev/ttyUSB5 115200
 number 6
 logfile /home/kchen/uc-log/uc6/uc6.log
 logfile flush 1
 log on
 #
-screen -t UC_3 /dev/ttyUSB4 115200
+screen -t UC_5 /dev/ttyUSB4 115200
 number 5
 logfile /home/kchen/uc-log/uc5/uc5.log
 logfile flush 1
 log on
 #
-screen -t UC_3 /dev/ttyUSB3 115200
+screen -t UC_4 /dev/ttyUSB3 115200
 number 4
 logfile /home/kchen/uc-log/uc4/uc4.log
 logfile flush 1
