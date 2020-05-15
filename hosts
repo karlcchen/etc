@@ -1,6 +1,5 @@
 127.0.0.1	localhost
-
-# 127.0.1.1	stelvio
+127.0.1.1	wuling
 
 # The following lines are desirable for IPv6 capable hosts
 ::1     ip6-localhost ip6-loopback
@@ -20,7 +19,7 @@ added for easy reference
 #10.0.54.158    gibson
 10.204.212.200  gibson
 10.204.210.201  hw-heat-pc1 # hw lab pc by new heat chamber
-10.21.53.202  	matsu
+10.21.53.202    matsu
 #10.202.2.77    merlot
 #10.202.2.79    chablis
 #10.202.2.82    bordeaux
@@ -55,5 +54,7 @@ added for easy reference
 10.103.49.239   glp2    # shanghai git server
 
 10.21.53.201    stelvio
-10.204.210.250	tianmen
-10.180.200.176	ismo-matsu itsu
+10.204.210.250  tianmen
+10.180.200.176  ismo-matsu itsu
+
+10.206.10.31	sonicgit
