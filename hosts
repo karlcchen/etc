@@ -1,4 +1,8 @@
 127.0.0.1	localhost
+
+# following entry is needed, otherwise, command execution will take a long time
+# need to change 127.0.1.1 to the current hostname
+# this is just a copy from one of the machine 
 127.0.1.1	wuling
 
 # The following lines are desirable for IPv6 capable hosts
