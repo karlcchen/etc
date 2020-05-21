@@ -39,7 +39,8 @@ added for easy reference
 10.204.213.202  bspjtag2  # bsp lab jtag debug station
 10.204.210.215  opengear
 
-192.168.1.250   kingman
+192.168.1.240   kingman
+#192.168.1.250	wuling
 10.204.213.1    tftpgateway  # for mgmt connected to 192.168.168.x, use ipaddr such as 10.204.213.14
 10.180.201.30   ftp-ismo  ismo-ftp # for FTP to ISMO FTP SERVER
 10.204.210.250  hwlab-kingman   kingman
