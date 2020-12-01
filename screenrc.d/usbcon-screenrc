@@ -3,6 +3,9 @@
 #
 # Some nice defaults
 #
+multiuser on 
+acladd kchen,test,dcons
+
 defscrollback 100000
 defutf8 on
 startup_message off
@@ -77,7 +80,8 @@ logfile flush 1
 number 1
 log on
 #
-screen -t main 0 login kchen
+#screen -t main 0 login kchen
+screen -t main 0 
 number 0 
 logfile /home/kchen/uc-log/uc0/w0.log
 logfile flush 1
