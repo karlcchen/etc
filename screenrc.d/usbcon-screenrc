@@ -26,62 +26,62 @@ hardstatus alwayslastline
 hardstatus string "%{= KW} %H [%`] %{= Kw}|%{-} %-Lw%{= bW}%n%f %t%{-}%+Lw %=%C%a %Y-%M-%d"
 #hardstatus alwayslastline "%H %-Lw%{= BW}%50>%n%f* %t%{-}%+Lw%<"
 
-screen -t S_0 /dev/ttyS0 115200
+screen -t s0 /dev/ttyS0 115200
 number 9
 logfile /home/kchen/uc-log/uc9/uc9.log
 logfile flush 1
 log on
 #
-screen -t UC_8 /dev/ttyUSB7 115200
+screen -t uc8 /dev/ttyUSB7 115200
 number 8
 logfile /home/kchen/uc-log/uc8/uc8.log
 logfile flush 1
 log on
 #
-screen -t UC_7 /dev/ttyUSB6 115200
+screen -t uc7 /dev/ttyUSB6 115200
 number 7
 logfile /home/kchen/uc-log/uc7/uc7.log
 logfile flush 1
 log on
 #
-screen -t UC_6 /dev/ttyUSB5 115200
+screen -t uc6 /dev/ttyUSB5 115200
 number 6
 logfile /home/kchen/uc-log/uc6/uc6.log
 logfile flush 1
 log on
 #
-screen -t UC_5 /dev/ttyUSB4 115200
+screen -t uc5 /dev/ttyUSB4 115200
 number 5
 logfile /home/kchen/uc-log/uc5/uc5.log
 logfile flush 1
 log on
 #
-screen -t UC_4 /dev/ttyUSB3 115200
+screen -t uc4 /dev/ttyUSB3 115200
 number 4
 logfile /home/kchen/uc-log/uc4/uc4.log
 logfile flush 1
 log on
 #
-screen -t UC_2 /dev/ttyUSB2 115200
+screen -t uc2 /dev/ttyUSB2 115200
 number 3
 logfile /home/kchen/uc-log/uc3/uc3.log
 logfile flush 1
 log on
 #
-screen -t UC_1 /dev/ttyUSB1 115200
+screen -t uc1 /dev/ttyUSB1 115200
 number 2
 logfile /home/kchen/uc-log/uc2/uc2.log
 logfile flush 1
 log on
 #
-screen -t UC_0 /dev/ttyUSB0 115200
+screen -t uc0 /dev/ttyUSB0 115200
 logfile /home/kchen/uc-log/uc1/uc1.log
 logfile flush 1
 number 1
 log on
 #
-#screen -t main 0 login kchen
-screen -t main 0 
+#screen -t scr0 0 login kchen
+screen -t scr0 0 
 number 0 
 logfile /home/kchen/uc-log/uc0/w0.log
 logfile flush 1
