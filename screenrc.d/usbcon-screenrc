@@ -3,8 +3,6 @@
 #
 # Some nice defaults
 #
-multiuser on 
-acladd kchen,test,dcons
 
 defscrollback 100000
 defutf8 on
@@ -16,7 +14,7 @@ escape ^Jj
 #defescape ^Aa
 
 # Serial port session specifics
-sessionname usb-console
+sessionname shared
 # caption always "%{= kw}%-w%{= BW}%n %t%{-}%+w %-= @%H users: %u"
 
 # Start up windows for each serial port we want to monitor.  There's no way to specify multiple on the command line
@@ -26,64 +24,78 @@ hardstatus alwayslastline
 hardstatus string "%{= KW} %H [%`] %{= Kw}|%{-} %-Lw%{= bW}%n%f %t%{-}%+Lw %=%C%a %Y-%M-%d"
 #hardstatus alwayslastline "%H %-Lw%{= BW}%50>%n%f* %t%{-}%+Lw%<"
 
-screen -t s0 /dev/ttyS0 115200
+screen /dev/ttyS0 115200
 number 9
-logfile /home/kchen/uc-log/uc9/uc9.log
+title s0
+logfile /home/kchen/scr-log/s0/s0.log
 logfile flush 1
 log on
 #
-screen -t uc8 /dev/ttyUSB7 115200
+screen /dev/ttyUSB7 115200
 number 8
-logfile /home/kchen/uc-log/uc8/uc8.log
+title uc8
+logfile /home/kchen/scr-log/u8/u8.log
 logfile flush 1
 log on
 #
-screen -t uc7 /dev/ttyUSB6 115200
+screen /dev/ttyUSB6 115200
 number 7
-logfile /home/kchen/uc-log/uc7/uc7.log
+title uc7
+logfile /home/kchen/scr-log/u7/u7.log
 logfile flush 1
 log on
 #
 screen -t uc6 /dev/ttyUSB5 115200
 number 6
-logfile /home/kchen/uc-log/uc6/uc6.log
+title uc6
+logfile /home/kchen/scr-log/u6/u6.log
 logfile flush 1
 log on
 #
 screen -t uc5 /dev/ttyUSB4 115200
 number 5
-logfile /home/kchen/uc-log/uc5/uc5.log
+title uc5
+logfile /home/kchen/scr-log/u5/u5.log
 logfile flush 1
 log on
 #
-screen -t uc4 /dev/ttyUSB3 115200
+screen /dev/ttyUSB3 115200
 number 4
-logfile /home/kchen/uc-log/uc4/uc4.log
+title uc4
+logfile /home/kchen/scr-log/u4/u4.log
 logfile flush 1
 log on
 #
-screen -t uc2 /dev/ttyUSB2 115200
+screen /dev/ttyUSB2 115200
 number 3
-logfile /home/kchen/uc-log/uc3/uc3.log
+title uc3
+logfile /home/kchen/scr-log/u3/u3.log
 logfile flush 1
 log on
 #
 screen -t uc1 /dev/ttyUSB1 115200
 number 2
-logfile /home/kchen/uc-log/uc2/uc2.log
+title uc2
+logfile /home/kchen/scr-log/u2/u2.log
 logfile flush 1
 log on
 #
 screen -t uc0 /dev/ttyUSB0 115200
-logfile /home/kchen/uc-log/uc1/uc1.log
-logfile flush 1
 number 1
+title uc1
+logfile /home/kchen/scr-log/u1/u1.log
+logfile flush 1
 log on
 #
-#screen -t scr0 0 login kchen
-screen -t scr0 0 
+screen -t sh0 0 
 number 0 
-logfile /home/kchen/uc-log/uc0/w0.log
+title sh0
+logfile /home/kchen/scr-log/sh0/sh0.log
 logfile flush 1
 log on
+#
 select 0
+
+multiuser on 
+aclchg test,dcons +rwx "bufferfile,stuff,colon,info,vbell,fit,clear,break,focus,windowlist,logfile,log,escape,meta,monitor,next,prev,other,number,redisplay,wrap,split,time,detach,copy,paste,xon,xoff,windows,silence,silencewait,resize,readbuf,readreg,activity,bind,displays,history,idle,lastmsg,lockscreen,wall,logtstamp,help,select,remove,title,reset,exec"
+
